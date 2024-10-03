@@ -1,18 +1,3 @@
-/*
-    Nome: Gabriel Xavier, Mateus Freitas    Fatec-Zs3
-
-    Curso: Desenvolvimento de Software Multiplataforma
-
-    Data: 15/09/2024
-
-
-    Versão: 3.0.0
-
-    - Adição de frameworks
-
-*/
-
-
 //importando bibliotacas
 const express = require('express');
 const session = require('express-session');
