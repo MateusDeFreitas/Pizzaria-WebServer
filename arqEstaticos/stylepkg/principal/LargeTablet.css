@@ -1,0 +1,87 @@
+/*                  Header                  */
+
+#primeiraTela {
+    display: grid;
+    grid-template-rows: 50px 60vh 1fr;
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.5), transparent);
+    width: 100%;
+}
+
+#conteinerTitulo {
+    justify-self: end;
+    width: fit-content;
+}
+
+#PrimeiroTitulo {
+    text-align: right;
+    margin-right: 5vw;
+}
+
+#pBordao {
+    text-align: left;
+    margin-right: 5vw;
+}
+
+#conteinerBotaoPedidoDentro {
+    display: none;
+}
+
+#conteinerBotaoPedidoFora {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+#aBotaoPedidoDois {
+    margin-bottom: 30px;
+}
+
+/*          Corpo            */
+
+
+#colUmApresentacao {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+#colUmApresentacao h2 {
+    margin-bottom: 40px;
+}
+
+#colUmApresentacao p {
+    width: 90%;
+}
+
+#colDoisApresentacao {
+    margin-right: 0px;
+    width: 100%;
+}
+
+#colDoisApresentacao img {
+    margin: auto;
+    width: 100%;
+}
+
+#conteinerBotaoLocalizacao a {
+    width: 90%;
+    padding: 10px 20px;
+    margin: 40px 0px;
+}
+
+#pLocalizacao {
+    font-size: 1.5rem;
+}
+
+/*               Seção autenticidade                   */
+
+#secaoAutenticidade article {
+    padding: 50px 5vw;
+}
+
+#secaoAutenticidade p {
+    width: 90%;
+}

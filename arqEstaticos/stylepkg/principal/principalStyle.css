@@ -1,0 +1,140 @@
+/*                    Header                      */
+
+header {
+    background-image: url(../../images/fundoPizzaHeader.jpg);
+}
+
+.conteinerBotaoPedido {
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.botaoPedido {
+    background-color: var(--tituloPrincipal);
+    border: 1px solid var(--cinza-claro);
+    color: var(--cinza-claro);
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 25px;
+    transition: background-color 0.7s;
+}
+
+.botaoPedido:hover {
+    background-color: var(--botao-pedido-hover);
+}
+
+#conteinerBotaoPedidoFora {
+    display: none;
+}
+
+/*          Corpo            */
+
+#secaoApresentacao {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+}
+
+#colUmApresentacao {
+    width: 60%;
+    padding: 60px 30px;
+}
+
+#colUmApresentacao h2 {
+    font-family: "Allura", cursive;
+    margin-bottom: 30px;
+}
+
+#colUmApresentacao p {
+    width: 80%;
+    margin-top: 20px;
+}
+
+#colDoisApresentacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    margin-right: 5%;
+    width: 35%;
+}
+
+#colDoisApresentacao span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+#colDoisApresentacao img {
+    display: inline;
+    width: 150%;
+    height: auto;
+}
+
+#conteinerBotaoLocalizacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+#conteinerBotaoLocalizacao a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    padding: 20px;
+    border: 3px solid var(--dourado);
+    margin-bottom: 40px;
+    transition: background-color 1s;
+}
+
+#conteinerBotaoLocalizacao a:hover {
+    background-color: var(--dourado);
+}
+
+#pLocalizacao {
+    font-family: "Comfortaa", sans-serif;
+    color: var(--dourado);
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: color 1s;
+}
+
+#conteinerBotaoLocalizacao a:hover #pLocalizacao {
+    color: var(--vermelho-escuro);
+}
+
+/*               Seção autenticidade                   */
+
+#secaoAutenticidade {
+    background-image: url(/images/pizzaFundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;   
+}
+
+#secaoAutenticidade article {
+    background-color: var(--cinza-claro-concentrado);
+    padding: 100px 10vw;
+}
+
+#secaoAutenticidade h2 {
+    text-align: center;
+    font-family: "Allura", sans-serif;
+    margin-bottom: 50px;
+}
+
+#secaoAutenticidade p {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}

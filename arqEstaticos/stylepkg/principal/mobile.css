@@ -1,0 +1,19 @@
+/*          Corpo            */
+
+#colUmApresentacao {
+    padding: 40px 10px;
+}
+
+#colUmApresentacao p {
+    width: 100%;
+}
+
+/*               Seção autenticidade                   */
+
+#secaoAutenticidade article {
+    padding: 40px 2vw;
+}
+
+#secaoAutenticidade p {
+    width: 100%;
+}

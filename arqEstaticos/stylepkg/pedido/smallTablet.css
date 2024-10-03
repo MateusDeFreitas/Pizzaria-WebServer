@@ -1,0 +1,19 @@
+/*                  Header                  */
+
+#primeiraTela {
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.7), transparent);
+}
+
+#PrimeiroTitulo {
+    font-size: 7rem;
+}
+
+/*                  Corpo                           */
+
+main {
+    width: 90vw;
+}
+
+.conteinerBotoes {
+    justify-content: center;
+}

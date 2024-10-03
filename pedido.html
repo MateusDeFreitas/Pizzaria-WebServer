@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedido</title>
+        <link rel="shortcut icon" href="images/iconPagina.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="stylepkg/geral.css">
+        <link rel="stylesheet" href="stylepkg/largeTablet.css" media="screen and (max-width: 1100px)">
+        <link rel="stylesheet" href="stylepkg/smallTablet.css" media="screen and (max-width: 700px)">
+        <link rel="stylesheet" href="stylepkg/mobile.css" media="screen and (max-width: 400px)">
+
+        <link rel="stylesheet" href="stylepkg/pedido/pedidoStyle.css">
+        <link rel="stylesheet" href="stylepkg/pedido/largeTablet.css" media="screen and (max-width: 1100px)">
+        <link rel="stylesheet" href="stylepkg/pedido/smallTablet.css" media="screen and (max-width: 700px)">
+        <link rel="stylesheet" href="stylepkg/pedido/mobile.css" media="screen and (max-width: 400px)">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lobster&display=swap" 
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="primeiraTela">
+                <menu>
+                    <ul>
+                        <li><a href="/">Início</a></li>
+                        <li><a href="/cardapio">Cardapio</a></li>
+                        <li><a href="/localizacao">Localização</a></li>
+                    </ul>
+                </menu>
+                <article id="conteinerTitulo">
+                    <h1 id="PrimeiroTitulo">Seu pedido</h1>
+                    <p id="pBordao">Agradecemos a preferência.</p>
+                </article>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h2>Pedido</h2>
+                <hr>
+                <h3 id="h3Custo">Custo Total:</h3>
+                <p id="pTotal">R$: 0.00</p>
+                <br>
+                <p id="pTamanho">Tamanho: Não selecionado</p>
+                <p id="pBorda">Borda: Não selecionada</p>
+                <p id="pSabor">Sabor: Não selecionado</p>
+                <hr>
+                <p id="pIngredientes">Extras: Não selecionado</p>
+                <hr>
+                <p id="pIngredientesOps">Opicionais: Não selecionado</p>
+                <hr>
+                <article class="conteinerBotoes">
+                    <a class="aBotoes" href="/cardapio">
+                        <span class="botoes">
+                            Refazer
+                        </span>
+                    </a>
+                    <a class="aBotoes" href="/">
+                        <span class="botoes">
+                            Confirmar
+                        </span>
+                    </a>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <div id="footerInfo">
+                <img src="images/pizzaIcon.png" alt="Icon Pizza">
+                <p>&copy; 2024 PizzaHot. Todos os direitos reservados.</p>
+                <br>
+                <p>Este é um projeto acadêmico desenvolvido com fins educacionais e sem fins lucrativos.</p>
+                <p>Siga-nos nas redes sociais para acompanhar nossas atualizações:</p>
+                <br>
+                <ul>
+                    <li><a href="#"><img src="images/instaIcon.png" alt="Icon Instagram"></a></li>
+                    <li><a href="#"><img src="images/ttIcon.png" alt="Icon Twitter"></a></li>
+                    <li><a href="#"><img src="images/wppIcon.png" alt="Icon WhatsApp"></a></li>
+                </ul>
+                <br>
+            </div>
+            <div id="footerDisclaimer">
+                <p>Imagens meramente ilustrativas. As informações contidas nesta página podem estar sujeitas a alterações sem aviso prévio.</p>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                
+                const preco = sessionStorage.getItem('preco');
+                const tamanhoTxt = sessionStorage.getItem('tamanhoTxt');
+                const bordaTxt = sessionStorage.getItem('bordaTxt');
+                const saborTxt = sessionStorage.getItem('saborTxt');
+                const extras = sessionStorage.getItem('extras');
+                const opcionais = sessionStorage.getItem('opcionais');
+
+                document.getElementById("pTotal").innerText = "R$: " + preco;
+                document.getElementById("pTamanho").innerText = "Tamanho: " + tamanhoTxt;
+                document.getElementById("pBorda").innerText = "Borda: " + bordaTxt;
+                document.getElementById("pSabor").innerText = "Sabor: " + saborTxt;
+                document.getElementById("pIngredientes").innerHTML = "Ingredientes extras:<br><br>" + (extras || "Nenhum ingrediente extra selecionado.");
+                document.getElementById("pIngredientesOps").innerHTML = "Ingredientes opcionais: <br><br>" + (opcionais || "Nenhum ingrediente opcional selecionado.");
+            });
+        </script>
+    </body>
+</html>

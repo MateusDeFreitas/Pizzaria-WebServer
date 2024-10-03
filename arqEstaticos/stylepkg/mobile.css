@@ -1,0 +1,29 @@
+html {
+    font-size: 10px;
+}
+
+/*                  Header                  */
+
+#PrimeiroTitulo {
+    font-size: 7rem;
+}
+
+/*              Corpo                       */
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+/*              Footer                       */
+
+footer p {
+    width: 95%;
+}
+
+footer ul {
+    width: 100%;
+}

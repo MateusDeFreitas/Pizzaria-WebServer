@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="shortcut icon" href="images/iconPagina.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="stylepkg/geral.css">
+    <link rel="stylesheet" href="stylepkg/largeTablet.css" media="screen and (max-width: 1100px)">
+    <link rel="stylesheet" href="stylepkg/smallTablet.css" media="screen and (max-width: 700px)">
+    <link rel="stylesheet" href="stylepkg/mobile.css" media="screen and (max-width: 400px)">
+
+    <link rel="stylesheet" href="stylepkg/cardapio/cardapioStyle.css">
+    <link rel="stylesheet" href="stylepkg/cardapio/largeTablet.css" media="screen and (max-width: 1100px)">
+    <link rel="stylesheet" href="stylepkg/cardapio/smallTablet.css" media="screen and (max-width: 700px)">
+    <link rel="stylesheet" href="stylepkg/cardapio/mobile.css" media="screen and (max-width: 400px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lobster&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Sacramento&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="primeiraTela">
+                <menu>
+                    <ul>
+                        <li><a href="/">Início</a></li>
+                        <li><a href="/localizacao">Localização</a></li>
+                    </ul>
+                </menu>
+                <article id="conteinerTitulo">
+                    <h1 id="PrimeiroTitulo">Cardapio</h1>
+                    <p id="pBordao">Monte sua pizza!</p>
+                </article>
+            </div>
+        </header>
+        <main>
+            <div>
+                <form id="formPizza" method="get">
+                    <fieldset>
+                        <legend>Tamanho</legend>
+                        <p>
+                            <span class="radioContainer">
+                                <input type="radio" name="tamanho" id="inputTamanho1" value="brotinho">
+                                <label for="inputTamanho1">Brotinho</label>
+                            </span>
+                            <span class="radioContainer">
+                                <input type="radio" name="tamanho" id="inputTamanho2" value="padrao">
+                                <label for="inputTamanho2">Padrão (30cm)</label>
+                            </span>
+                            <span class="radioContainer">
+                                <input type="radio" name="tamanho" id="inputTamanho3" value="grande">
+                                <label for="inputTamanho3">Grande (40cm)</label>
+                            </span>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Borda</legend>
+                        <p>
+                            <span>
+                                <input type="radio" name="borda" id="inputBorda1" value="semBorda">
+                                <label for="inputBorda1">Sem borda</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="borda" id="inputBorda2" value="tradicional">
+                                <label for="inputBorda2">Tradicional</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="borda" id="inputBorda3" value="cheddar">
+                                <label for="inputBorda3">Recheada com cheddar (+2R$)</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="borda" id="inputBorda4" value="catupiry">
+                                <label for="inputBorda4">Recheada com catupiry (+3R$)</label>
+                            </span>
+                        </p>
+                    </fieldset>
+                    <fieldset id="fieldsetSabor">
+                        <legend>Sabores</legend>
+                        <p id="pValores">
+                            Valores: ( Brotinho | Padrão | Grande )
+                        </p>
+                        <p>
+
+                            <span class="spanSabores"><p></p></span>
+
+                            <span class="spanSabores">
+                                <article class="articleValoresSabores">
+                                    <input type="radio" name="sabor" id="inputSabor1" value="mussarela">
+                                    <label for="inputSabor1">Mussarela</label>
+                                </article>
+                                <p class="pValoresSabores">( R$ 26.25 | R$ 35.00 | R$43.75 )</p>
+                            </span>
+                            <br>        
+                            <span class="spanSabores">
+                                <article class="articleValoresSabores">
+                                    <input type="radio" name="sabor" id="inputSabor2" value="calabresa">
+                                    <label for="inputSabor2">Calabresa</label>
+                                </article>
+                                <p class="pValoresSabores">( R$ 21.00 | R$ 28.00 | R$ 35.00 )</p>
+                            </span>
+                            <br>
+                            <span class="spanSabores">
+                                <article class="articleValoresSabores">
+                                    <input type="radio" name="sabor" id="inputSabor3" value="marguerita">
+                                    <label for="inputSabor3">Marguerita</label>
+                                </article>
+                                <p class="pValoresSabores">( R$ 18.75 | R$ 25.00 | R$ 31.25 )</p>
+                            </span>
+                            <br>
+                            <span class="spanSabores">
+                                <article class="articleValoresSabores">
+                                    <input type="radio" name="sabor" id="inputSabor4" value="frangoComCatupiry">
+                                    <label for="inputSabor4">Frango com Catupiry</label>
+                                </article>
+                                <p class="pValoresSabores">( R$ 22.50 | R$ 30.00 | R$ 37.50 )</p>
+                            </span>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ingredientes extras</legend>
+                        <p>
+                            <span>
+                                <input type="checkbox" name="ingredienteX" id="inputIngredienteX1" value="azeitonaPreta">
+                                <label for="inputIngredienteX1">Azeitona Preta (+3R$)</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="ingredienteX" id="inputIngredienteX2" value="queijoExtra">
+                                <label for="inputIngredienteX2">Queijo extra (+3R$)</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="ingredienteX" id="inputIngredienteX3" value="molhoExtra">
+                                <label for="inputIngredienteX3">Molho extra (+5R$)</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="ingredienteX" id="inputIngredienteX4" value="bacon">
+                                <label for="inputIngredienteX4">Bacon (+4R$)</label>
+                            </span>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ingredientes opcionais</legend>
+                        <p> 
+                            <span>
+                                <input type="checkbox" name="ingredienteOp" id="inputIngredienteOp1" value="azeitona">
+                                <label for="inputIngredienteOp1">Azeitona</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="ingredienteOp" id="inputIngredienteOp2" value="cebola">
+                                <label for="inputIngredienteOp2">Cebola</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="ingredienteOp" id="inputIngredienteOp3" value="oregano">
+                                <label for="inputIngredienteOp3">Oregano</label>
+                            </span>
+                        </p>
+                    </fieldset>
+                    <input id="button" type="button" value="Montar Pizza">
+                    <!--
+                    <hr>
+                    <h3 id="h3Custo">Custo Total:</h3>
+                    <p id="pTotal">R$: 0.00</p>
+                    <br>
+                    <p id="pTamanho">Tamanho: Não selecionado</p>
+                    <p id="pBorda">Borda: Não selecionada</p>
+                    <p id="pSabor">Sabor: Não selecionado</p>
+                    <hr>
+                    <p id="pIngredientes">Extras: Não selecionado</p>
+                    <hr>
+                    <p id="pIngredientesOps">Opicionais: Não selecionado</p>
+                    <hr>
+                    -->
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div id="footerInfo">
+                <img src="images/pizzaIcon.png" alt="Icon Pizza">
+                <p>&copy; 2024 PizzaHot. Todos os direitos reservados.</p>
+                <br>
+                <p>Este é um projeto acadêmico desenvolvido com fins educacionais e sem fins lucrativos.</p>
+                <p>Siga-nos nas redes sociais para acompanhar nossas atualizações:</p>
+                <br>
+                <ul>
+                    <li><a href="#"><img src="images/instaIcon.png" alt="Icon Instagram"></a></li>
+                    <li><a href="#"><img src="images/ttIcon.png" alt="Icon Twitter"></a></li>
+                    <li><a href="#"><img src="images/wppIcon.png" alt="Icon WhatsApp"></a></li>
+                </ul>
+                <br>
+            </div>
+            <div id="footerDisclaimer">
+                <p>Imagens meramente ilustrativas. As informações contidas nesta página podem estar sujeitas a alterações sem aviso prévio.</p>
+            </div>
+        </footer>
+        <script src="/appPizzaria.js"></script>
+    </body>
+</html>

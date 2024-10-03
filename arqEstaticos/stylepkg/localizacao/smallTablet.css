@@ -1,0 +1,28 @@
+/*                  Header                  */
+
+#PrimeiroTitulo {
+    font-size: 7rem;
+}
+
+/*                  Corpo                       */
+
+main {
+    width: 90vw;
+    padding: 7px;
+}
+
+main > div {
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.info img {
+    max-width: 97%;
+}

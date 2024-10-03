@@ -1,0 +1,208 @@
+/*              Header                  */
+
+header {
+    justify-content: flex-start;
+    background-image: url(../../images/fundoCardapio.jpg);
+    background-position: center right;
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+menu ul {
+    justify-content: flex-start;
+}
+
+menu ul li a {
+    margin-left: 2vw;
+}
+
+#PrimeiroTitulo {
+    margin-left: 2vw;
+    margin-right: 0px;
+    text-align: left;
+    margin-top: 22vh;
+
+}
+
+#pBordao {
+    text-align: left;
+    margin-left: 2vw;
+}
+
+/*              Corpo                   */
+
+main {
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--tituloPrincipal);
+    text-shadow: 3px 3px 5px var(--cinza-claro);
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    display: inline-block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: var(--tituloPrincipal);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--laranja-queimado);
+}
+
+form {
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid var(--vermelho-escuro);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 1.5rem;
+    color: var(--tituloPrincipal);
+    padding: 0 10px;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    position: relative;
+    appearance: none;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--cinza-input);
+    border-radius: 50%;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    position: relative;
+    appearance: none;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--cinza-input);
+    border-radius: 4px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    border: 2px solid var(--vermelho-escuro);
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: var(--vermelho-escuro); 
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:checked::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: var(--vermelho-escuro); 
+    border-radius: 1px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color: var(--cinza-input);
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+    color: var(--vermelho-escuro);
+}
+
+input[type="button"] {
+    background-color: var(--tituloPrincipal);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+input[type="button"]:hover {
+    background-color: var(--vermelho-tomate);
+}
+
+input[type="radio"],
+input[type="checkbox"],
+label {
+    vertical-align: middle;
+}
+
+.radioContainer  {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#h3Custo, 
+#pValores {
+    color: var(--vermelho-escuro);
+}
+
+.spanSabores {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.articleValoresSabores {
+    display: inline;
+}
+
+.pValoresSabores {
+    display: inline;
+    color: var(--cinza-input);
+}
+
+#fieldsetSabor label {
+    line-height: 40px;
+}
+
+/*              Footer                  */
+
+footer {
+    border-top: 1px solid white;
+    background-color: var(--background-footer);
+}
+
+

@@ -1,0 +1,19 @@
+html {
+    font-size: 14px;
+}
+
+/*                  Header                  */
+
+header {
+    min-height: 500px;
+}
+
+/*           footer                   */
+
+#footerInfo > img {
+    height: 150px;
+}
+
+footer li img {
+    height: 35px;
+}

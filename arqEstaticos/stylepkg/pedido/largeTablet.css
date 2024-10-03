@@ -1,0 +1,22 @@
+/*                  Header                  */
+
+#primeiraTela {
+    justify-content: flex-end;
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.5), transparent);
+    width: 100%;
+}
+
+#conteinerTitulo {
+    width: fit-content;
+}
+
+#PrimeiroTitulo {
+    text-align: right;
+    margin-right: 5vw;
+}
+
+#pBordao {
+    text-align: left;
+    margin-right: 5vw;
+}
+

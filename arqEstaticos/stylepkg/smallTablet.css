@@ -1,0 +1,19 @@
+html {
+    font-size: 12px;
+}
+
+/*                  Header                  */
+
+menu ul li a {
+    font-size: 1.4rem;
+}
+
+#PrimeiroTitulo {
+    font-size: 8rem;
+}
+
+/*              Corpo                       */
+
+h2 {
+    font-size: 4rem;
+}
