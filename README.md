@@ -1,6 +1,6 @@
 # 🍕 Pizzaria PizzaHot - Web Server
 
-**Pizzaria PizzaHot** é um projeto que simula uma página de pedidos de pizza online com personalização e cálculo dinâmico de preços. O projeto une front-end e back-end para entregar uma experiência completa de personalização e visualização de pedidos.
+**Pizzaria PizzaHot** é um projeto que trabalha como uma página de pedidos de pizza online com personalização e cálculo dinâmico de preços. O projeto une front-end e back-end para entregar uma experiência completa de personalização e visualização de pedidos.
 
 ---
 
@@ -20,12 +20,6 @@
 - Cálculo dinâmico do preço do pedido
 - Atualização automática do valor ao modificar os ingredientes
 - Simulação completa de um sistema de pedidos
-
----
-
-## 🤓 Sobre o Projeto
-
-Este projeto foi desenvolvido com meu colega **Gabriel Xavier**, sendo minha **primeira experiência com Node.js**. Foi uma ótima oportunidade para aplicar conceitos de servidor, rotas e manipulação de dados em tempo real, unindo os conhecimentos de front-end e back-end.
 
 ---
 
